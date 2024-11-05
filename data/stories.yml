@@ -1,0 +1,12 @@
+version: "3.1"
+
+stories:
+- story: greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+- story: copy content
+  steps:
+  - intent: copy_content
+  - action: action_copy_content

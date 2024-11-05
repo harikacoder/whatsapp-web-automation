@@ -1,0 +1,14 @@
+version: "3.1"
+
+rules:
+
+  - rule: greet the user
+  steps:
+  - intent: greet
+  - action: utter_greet
+
+  - rule: Identify and save WhatsApp content
+    steps:
+      - intent: identify_content
+      - action: action_identify_content
+      - action: utter_ask_content_type
